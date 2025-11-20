@@ -18,6 +18,6 @@ When user requests initialization of the memory bank (command `initialize memory
 - Dependencies and external integrations
 - Testing frameworks and patterns
 
-I must be extremely thorough during initialization, spending extra time and effort to build a comprehensive understanding of the project. A high-quality initialization will dramatically improve all future interactions, while a rushed or incomplete initialization will permanently limit my effectiveness.
+I must be extremely thorough during initialization, spending extra time and effort to build a comprehensive understanding of the project. A high-quality initialization will dramatically improve all future interactions, while a rushed or incomplete initialization will permanently limit my effectiveness. I will never write any confidential information into the Memory bank, including but not limited to passwords, secret keys, server IPs, database usernames, ports, etc.
 
 After initialization, I will ask the user to read through the memory bank files and verify product description, used technologies and other information. I should provide a summary of what I've understood about the project to help the user verify the accuracy of the memory bank files. I should encourage the user to correct any misunderstandings or add missing information, as this will significantly improve future interactions.

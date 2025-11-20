@@ -171,6 +171,8 @@ flowchart TD
 - Evolution of project decisions
 - Tool usage patterns
 
+!!! Warning !!! It is strictly forbidden to write any confidential information into the memory bank, including but not limited to passwords, keys, server IP addresses, and other content that poses a threat to project security.
+
 The format is flexible - focus on capturing valuable insights that help me work more effectively with you and the project. Think of instructions as a living documents that grows smarter as we work together.
 
 ## Tasks Management

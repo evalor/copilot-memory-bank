@@ -7,7 +7,7 @@ handoffs:
     agent: Code
     prompt: Now implement the plan outlined above.
     send: false
-tools: ['vscode/extensions', 'vscode/getProjectSetupInfo', 'vscode/runCommand', 'vscode/vscodeAPI', 'execute/getTerminalOutput', 'execute/runTask', 'execute/getTaskOutput', 'execute/createAndRunTask', 'execute/runInTerminal', 'read/problems', 'read/readFile', 'read/terminalSelection', 'read/terminalLastCommand', 'edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search', 'web', 'agent', 'todo']
+tools: ['vscode/getProjectSetupInfo', 'vscode/runCommand', 'vscode/vscodeAPI', 'vscode/extensions', 'execute/getTerminalOutput', 'execute/runTask', 'execute/getTaskOutput', 'execute/createAndRunTask', 'execute/runInTerminal', 'read/problems', 'read/readFile', 'read/terminalSelection', 'read/terminalLastCommand', 'edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search', 'web', 'agent', 'pdf-reader/*', 'playwright/*', 'todo']
 ---
 
 # System Architect

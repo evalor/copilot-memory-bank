@@ -1,0 +1,18 @@
+{
+	"servers": {
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"type": "stdio"
+		},
+		"pdf-reader": {
+			"command": "npx",
+			"args": [
+				"@fabriqa.ai/pdf-reader-mcp@latest"
+			]
+		}
+	},
+	"inputs": []
+}

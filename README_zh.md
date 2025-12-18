@@ -52,19 +52,25 @@
 ├── projectbrief.md       # 项目摘要与目标
 ├── productContext.md     # 项目目标、用户与价值
 ├── activeContext.md      # 当前会话目标与下一步
-├── decisionLog.md        # 技术/架构决策与理由
+├── systemPatterns.md     # 系统架构与技术决策
+├── techContext.md        # 技术栈与技术约束
 ├── progress.md           # 已完成工作与待办项
-└── tasks/
-    ├── _index.md         # 任务总览
-    └── TASKID-*.md       # 单个任务文件
+├── tasks/
+│   ├── _index.md         # 任务总览
+│   └── TASKID-*.md       # 单个任务文件
+└── knowledge/
+    ├── _index.md         # 知识库索引
+    ├── KID-*.md          # 单个知识文件
+    └── [分类目录]/        # 可选的分类知识文件夹
 ```
 
 ---
 
 ## 🔁 记忆管理
 
-- 自动：可选的自动更新触发器（基于模式事件），Copilot会自动在合适的时机进行记忆库更新。
-- 手动：使用 `update memory bank` 指令，强制要求Copilot重新检阅项目并刷新记忆库。
+- **自动更新**：Copilot 会在开发过程中的适当时机自动更新记忆库。
+- **手动更新**：使用 `update memory bank` 或 `umb` 命令，强制 Copilot 重新检阅并刷新整个记忆库。
+- **快速模式**：使用 `disable memory bank` 或 `dmb` 命令跳过记忆库加载，适用于不需要项目上下文的简单独立任务。
 
 ---
 
@@ -83,6 +89,25 @@
 - `add task` / `create task`：创建新任务文件并将其加入 `tasks/_index.md`。
 - `update task [ID]`：在指定任务文件中添加当天的进度条目并更新状态字段（`Status`、`Updated` 等）。
 - `show tasks [filter]`：显示任务列表并支持过滤。
+
+---
+
+## 📚 知识库管理
+
+Memory Bank 包含了一套知识库系统，用于记录开发过程中发现的重要信息和模式。
+
+### 结构
+
+知识存储在 `.memory-bank/knowledge/` 目录下：
+- `_index.md`：所有知识条目的主索引
+- `KID-*.md`：单个知识文件（例如 `K001-api-patterns.md`）
+- 可选的分类文件夹，用于组织相关知识
+
+### 使用方法
+
+- `add knowledge`：创建新的知识条目
+- 知识会在与当前任务相关时自动被引用
+- 在知识文件夹内使用 grep_search 查找特定信息
 
 ## 🤝 贡献
 

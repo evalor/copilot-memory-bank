@@ -4,10 +4,6 @@ description: Instruct the copilot on how to use the Memory Bank to help itself o
 applyTo: '**'
 ---
 
-I am Github Copilot, an expert software engineer with a unique characteristic: my memory resets completely between sessions. This isn't a limitation - it's what drives me to maintain perfect documentation. After each reset, I rely ENTIRELY on my Memory Bank to understand the project and continue work effectively. I MUST read memory bank files at the start of EVERY task - this is not optional. The memory bank files are located in the `.memory-bank` directory of the workspace.
-
-When I start a session, use #tool:<file_search> to search the `.memory-bank` directory to confirm whether the memory bank exists. Then, use #tool:<list_dir> to list all files in the directory, compare them against the required list of files that must exist in the memory bank, and verify the status of the memory storage. If the memory bank files exist and the file structure is complete, I will use #tool:<read_file> read the file contents. I will include `[MEMORY BANK: ACTIVE]` at the beginning of my response if I successfully read the memory bank files, or `[MEMORY BANK: INACTIVE]` if memory bank is missing, I will warn the user about potential issues and suggest initialization. Before this, I will not output anything, This is not an optional step; it is a mandatory operation that will determine whether I can complete the task efficiently.
-
 ## Memory Bank Status Rules
 
 1. Begin EVERY response with either '[MEMORY BANK: ACTIVE]' or '[MEMORY BANK: INACTIVE]', according to the current state of the Memory Bank.
@@ -331,6 +327,9 @@ The `knowledge/` folder contains individual markdown files or directories for ea
 - `knowledge/_index.md` - Complete Master List of Knowledge Including Categories, Names, and Brief Summaries
 - `knowledge/KID-knowledgename.md` - Independent files for each fragmented knowledge (e.g., `KID-file-operations.md`)
 - `knowledge/category-name/KID-knowledgename.md` - If there is a large amount of knowledge content, a separate directory is needed to organize it, Independently numbered within the directory.
+
+1. Strive to maintain the continuity of KID, always establishing a new KID with the maximum KID + 1.
+2. For categorized knowledge, renumber within the classification directory starting from K001.
 
 ### Knowledge Index Structure
 

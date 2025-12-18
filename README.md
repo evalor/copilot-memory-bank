@@ -55,17 +55,22 @@ Tip: Manually creating a `projectbrief.md` with key project information will sig
 ├── systemPatterns.md     # System architecture and technical decisions
 ├── techContext.md        # Technologies used and technical constraints
 ├── progress.md           # Completed work and pending items
-└── tasks/
-    ├── _index.md         # Tasks overview
-    └── TASKID-*.md       # Individual task files
+├── tasks/
+│   ├── _index.md         # Tasks overview
+│   └── TASKID-*.md       # Individual task files
+└── knowledge/
+    ├── _index.md         # Knowledge base index
+    ├── KID-*.md          # Individual knowledge files
+    └── [categories]/     # Optional categorized knowledge folders
 ```
 
 ---
 
 ## 🔁 Memory Management
 
-- Automatic: Optional automatic update triggers (pattern-based) let Copilot update the memory bank at appropriate times.
-- Manual: Use the `update memory bank` command to force Copilot to re-scan the project and refresh the memory bank.
+- **Automatic**: Copilot will automatically update the memory bank at appropriate times during development.
+- **Manual**: Use `update memory bank` or `umb` to force Copilot to review and refresh the entire memory bank.
+- **Quick Mode**: Use `disable memory bank` or `dmb` to skip memory bank loading for simple, isolated tasks that don't need project context.
 
 ---
 
@@ -84,6 +89,25 @@ Create a task → Document implementation plan → Write progress logs in the ta
 - `add task` / `create task`: Create a new task file and add it to `tasks/_index.md`.
 - `update task [ID]`: Add a progress entry for today in the specified task file and update status fields (`Status`, `Updated`, etc.).
 - `show tasks [filter]`: Display task lists with filters.
+
+---
+
+## 📚 Knowledge Management
+
+The Memory Bank includes a knowledge base system for capturing important information and patterns discovered during development.
+
+### Structure
+
+Knowledge is stored in `.memory-bank/knowledge/` with:
+- `_index.md`: Master index of all knowledge entries
+- `KID-*.md`: Individual knowledge files (e.g., `K001-api-patterns.md`)
+- Optional category folders for organizing related knowledge
+
+### Usage
+
+- `add knowledge`: Create a new knowledge entry
+- Knowledge is automatically referenced when relevant to current tasks
+- Use grep_search within the knowledge folder to find specific information
 
 ## 🤝 Contributing
 

@@ -2,7 +2,7 @@
 name: Code
 description: Design robust and scalable software systems, make high-level architectural decisions, and maintain the project's memory bank.
 argument-hint: What do you want to code?
-tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'agent', 'todo']
+tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'agent', 'pdf-reader/*', 'playwright/*', 'todo']
 ---
 
 # Code Expert

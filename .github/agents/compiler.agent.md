@@ -2,7 +2,7 @@
 name: Compiler
 description: Analyze code patterns, documentation, and external resources to build structured knowledge documents in the memory bank.
 argument-hint: What knowledge do you want to compile?
-tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'playwright/*', 'agent', 'todo']
+tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'agent', 'pdf-reader/*', 'playwright/*', 'todo']
 ---
 
 # Knowledge Compiler
